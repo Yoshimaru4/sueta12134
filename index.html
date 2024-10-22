@@ -1,0 +1,177 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+		<script type="text/javascript">
+			window.tailwind.config = {
+				darkMode: ['class'],
+				theme: {
+					extend: {
+						colors: {
+							border: 'hsl(var(--border))',
+							input: 'hsl(var(--input))',
+							ring: 'hsl(var(--ring))',
+							background: 'hsl(var(--background))',
+							foreground: 'hsl(var(--foreground))',
+							primary: {
+								DEFAULT: 'hsl(var(--primary))',
+								foreground: 'hsl(var(--primary-foreground))'
+							},
+							secondary: {
+								DEFAULT: 'hsl(var(--secondary))',
+								foreground: 'hsl(var(--secondary-foreground))'
+							},
+							destructive: {
+								DEFAULT: 'hsl(var(--destructive))',
+								foreground: 'hsl(var(--destructive-foreground))'
+							},
+							muted: {
+								DEFAULT: 'hsl(var(--muted))',
+								foreground: 'hsl(var(--muted-foreground))'
+							},
+							accent: {
+								DEFAULT: 'hsl(var(--accent))',
+								foreground: 'hsl(var(--accent-foreground))'
+							},
+							popover: {
+								DEFAULT: 'hsl(var(--popover))',
+								foreground: 'hsl(var(--popover-foreground))'
+							},
+							card: {
+								DEFAULT: 'hsl(var(--card))',
+								foreground: 'hsl(var(--card-foreground))'
+							},
+						},
+					}
+				}
+			}
+		</script>
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
+  </head>
+  <body>
+    <div class="bg-white text-zinc-800 font-sans relative">
+    
+    <header class="p-4 flex justify-between items-center">
+        <img src="https://placehold.co/100" alt="Logo" class="h-8" />
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-blue-500">Home</a></li>
+                <li><a href="#" class="text-blue-500">About</a></li>
+                <li><a href="#" class="text-blue-500">Services</a></li>
+                <li><a href="#" class="text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="p-4 bg-blue-500 text-white text-center">
+        <h1 class="text-3xl">Your Catchy Headline Here</h1>
+        <p class="mt-2">A compelling subheadline goes here</p>
+        <button class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-lg">Get Started</button>
+    </section>
+    
+    <section class="p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="bg-zinc-100 p-4 rounded-lg">
+                <img src="https://placehold.co/300" alt="Feature 1" class="w-full h-40 object-cover rounded-lg" />
+                <h2 class="text-xl mt-2">Feature 1</h2>
+                <p class="mt-2">Description of feature 1 goes here</p>
+            </div>
+            
+            <div class="bg-zinc-100 p-4 rounded-lg">
+                <img src="https://placehold.co/300" alt="Feature 2" class="w-full h-40 object-cover rounded-lg" />
+                <h2 class="text-xl mt-2">Feature 2</h2>
+                <p class="mt-2">Description of feature 2 goes here</p>
+            </div>
+            
+            <div class="bg-zinc-100 p-4 rounded-lg">
+                <img src="https://placehold.co/300" alt="Feature 3" class="w-full h-40 object-cover rounded-lg" />
+                <h2 class="text-xl mt-2">Feature 3</h2>
+                <p class="mt-2">Description of feature 3 goes here</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-4 bg-zinc-200">
+        <h2 class="text-2xl text-center">Testimonials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+            
+            <div class="bg-white p-4 rounded-lg">
+                <p>"Testimonial 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+                <p class="text-right mt-2">- Customer 1</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-lg">
+                <p>"Testimonial 2 goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                <p class="text-right mt-2">- Customer 2</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-4 bg-blue-500 text-white text-center">
+        <h2 class="text-2xl">Ready to Get Started?</h2>
+        <button class="bg-yellow-500 text-white px-4 py-2 mt-4 rounded-lg">Sign Up Now</button>
+    </section>
+    
+    <footer class="p-4 bg-zinc-800 text-white text-center">
+        <ul class="flex justify-center space-x-4">
+            <li><a href="#" class="text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-white">Terms of Service</a></li>
+            <li><a href="#" class="text-white">Contact Us</a></li>
+        </ul>
+        <p class="mt-4">&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+    
+    <button class="bg-accent text-accent-foreground px-4 py-2 rounded-full fixed bottom-4 right-4 z-50">Click Me!</button>
+</div>
+
+  </body>
+</html>
